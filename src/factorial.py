@@ -13,10 +13,17 @@ def factorial(num):
         return fact
 
 if len(sys.argv) < 2:
-    input_str = input("Por favor, ingrese el rango de números en el formato desde-hasta: ")
-    desde, hasta = map(int, input_str.split('-'))
+    print("Debe ingresar un rango!")
+    sys.exit()
 else:
-    desde, hasta = map(int, sys.argv[1].split('-'))
+    rango = sys.argv[1]
+    if "-" not in rango:
+        print("Formato incorrecto del rango. Debe ser desde- o -hasta.")
+        sys.exit()
+    else:
+        desde, hasta = rango.split("-")
+        desde = 1 if desde == "" else int(desde)
+        hasta = 60 if hasta == "" else int(hasta)
 
 if desde > hasta:
     desde, hasta = hasta, desde
