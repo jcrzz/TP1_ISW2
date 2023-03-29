@@ -1,6 +1,6 @@
 import sys
 
-def factorial(num):
+def factorial(num):                             #calculo del factorial
     if num < 0:
         print("El factorial de un número negativo no existe")
     elif num == 0:
@@ -12,13 +12,13 @@ def factorial(num):
             num -= 1
         return fact
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 2:                                           #verificacion de los argumentos
     print("Debe ingresar un rango!")
     sys.exit()
 else:
     rango = sys.argv[1]
     if "-" not in rango:
-        print("Formato incorrecto del rango. Debe ser desde- o -hasta.")
+        print("Formato incorrecto del rango. Debe ser desde- o -hasta.")        #comprobacion del rango
         sys.exit()
     else:
         desde, hasta = rango.split("-")
