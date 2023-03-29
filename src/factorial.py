@@ -1,10 +1,3 @@
-#!/usr/bin/python
-#*-------------------------------------------------------------------------*
-#* factorial.py                                                            *
-#* calcula el factorial de un número                                       *
-#* Dr.P.E.Colla (c) 2022                                                   *
-#* Creative commons                                                        *
-#*-------------------------------------------------------------------------*
 import sys
 
 def factorial(num):
@@ -19,9 +12,16 @@ def factorial(num):
             num -= 1
         return fact
 
-if len(sys.argv) < 2:                   #modificacion para que si no se ingresa el argumento, lo solicite
-    num = int(input("Por favor, ingrese un número: "))
+if len(sys.argv) < 2:
+    input_str = input("Por favor, ingrese el rango de números en el formato desde-hasta: ")
+    desde, hasta = map(int, input_str.split('-'))
 else:
-    num = int(sys.argv[1])
+    desde, hasta = map(int, sys.argv[1].split('-'))
 
-print("El factorial de", num, "es", factorial(num))
+if desde > hasta:
+    desde, hasta = hasta, desde
+
+print("Calculando los factoriales entre", desde, "y", hasta, "...")
+
+for num in range(desde, hasta+1):
+    print("El factorial de", num, "es", factorial(num))
