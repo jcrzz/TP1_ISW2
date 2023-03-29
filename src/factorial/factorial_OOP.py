@@ -1,11 +1,13 @@
+import sys
+
 class Factorial:
-    def __init__(self, min_num, max_num):
-        self.min_num = min_num
-        self.max_num = max_num
-    
-    def calculate_factorial(self, num):
+    def _init_(self):
+        self.min = None
+        self.max = None
+
+    def factorial(self, num):
         if num < 0:
-            return None
+            print("El factorial de un número negativo no existe")
         elif num == 0:
             return 1
         else:
@@ -14,18 +16,20 @@ class Factorial:
                 fact *= num
                 num -= 1
             return fact
-    
-    def run(self):
-        if self.min_num > self.max_num:
-            self.min_num, self.max_num = self.max_num, self.min_num
-        
-        print("Calculando los factoriales entre", self.min_num, "y", self.max_num, "...")
-        
-        for num in range(self.min_num, self.max_num+1):
-            result = self.calculate_factorial(num)
-            if result is None:
-                print("El factorial de un número negativo no existe")
-            else:
-                print("El factorial de", num, "! es", result)
-factorial_obj = Factorial(1, 5) # Calcula los factoriales entre 1 y 5
-factorial_obj.run()
+
+    def run(self, min=None, max=None):
+        if not min and not max:
+            input_ = input("Por favor, ingrese el rango de números en el formato inicio-final: ")
+            self.min, self.max = map(int, input_.split('-'))
+        else:
+            self.min, self.max = min, max
+
+        if self.min > self.max:
+            self.min, self.max = self.max, self.min
+
+        print("Calculando los factoriales entre", self.min, "y", self.max, "...")
+
+        for num in range(self.min, self.max+1):
+            print("El factorial de", num,"! es", self.factorial(num))
+factorial = Factorial()
+factorial.run()
