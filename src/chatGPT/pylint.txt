@@ -1,0 +1,26 @@
+PS C:\Juan Cruz\uader\sw2\tp1\src\chatGPT> pylint python_gpt.py     
+************* Module python_gpt
+python_gpt.py:1:17: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:3:13: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:15:7: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:16:14: C0303: Trailing whitespace (trailing-whitespace)        
+python_gpt.py:17:14: C0303: Trailing whitespace (trailing-whitespace)        
+python_gpt.py:18:9: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:19:15: C0303: Trailing whitespace (trailing-whitespace)        
+python_gpt.py:20:16: C0303: Trailing whitespace (trailing-whitespace)        
+python_gpt.py:21:6: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:22:33: C0303: Trailing whitespace (trailing-whitespace)        
+python_gpt.py:36:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:40:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:44:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:47:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:50:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:68:0: C0303: Trailing whitespace (trailing-whitespace)
+python_gpt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+python_gpt.py:28:0: C0116: Missing function or method docstring (missing-function-docstring)
+python_gpt.py:49:4: C0103: Constant name "prompt" doesn't conform to UPPER_CASE naming style (invalid-name)
+python_gpt.py:71:11: W0718: Catching too general exception Exception (broad-exception-caught)
+python_gpt.py:4:0: C0411: standard import "import argparse" should be placed before "import openai" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 3.64/10

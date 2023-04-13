@@ -1,0 +1,117 @@
+PS C:\Juan Cruz\uader\sw2\tp1\src\chatGPT> multimetric python_gpt.py
+{
+  "files": {
+    "C:\\Juan Cruz\\uader\\sw2\\tp1\\src\\chatGPT\\python_gpt.py": {
+      "comment_ratio": 34.0084388185654,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.45329009569091333,
+      "halstead_difficulty": 12.467213114754097,
+      "halstead_effort": 16953.792677357684,
+      "halstead_timerequired": 941.8773709643158,
+      "halstead_volume": 1359.87028707274,
+      "lang": [
+        "Python"
+      ],
+      "loc": 1,
+      "operands_sum": 117,
+      "operands_uniq": 61,
+      "operators_sum": 102,
+      "operators_uniq": 13
+    }
+  },
+  "overall": {
+    "comment_ratio": 34.0084388185654,
+    "cyclomatic_complexity": 5,
+    "fanout_external": 2,
+    "fanout_internal": 0,
+    "halstead_bugprop": 0.45329009569091333,
+    "halstead_difficulty": 12.467213114754097,
+    "halstead_effort": 16953.792677357684,
+    "halstead_timerequired": 941.8773709643158,
+    "halstead_volume": 1359.87028707274,
+    "loc": 1,
+    "maintainability_index": 100,
+    "operands_sum": 117,
+    "operands_uniq": 61,
+    "operators_sum": 102,
+    "operators_uniq": 13,
+    "pylint": 100.0,
+    "tiobe": 91.0,
+    "tiobe_compiler": 100.0,
+    "tiobe_complexity": 40.0,
+    "tiobe_coverage": 100.0,
+    "tiobe_duplication": 100.0,
+    "tiobe_fanout": 100.0,
+    "tiobe_functional": 100.0,
+    "tiobe_security": 100.0,
+    "tiobe_standard": 100.0
+  },
+  "stats": {
+    "max": {
+      "comment_ratio": 34.0084388185654,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.45329009569091333,
+      "halstead_difficulty": 12.467213114754097,
+      "halstead_effort": 16953.792677357684,
+      "halstead_timerequired": 941.8773709643158,
+      "halstead_volume": 1359.87028707274,
+      "loc": 1,
+      "operands_sum": 117,
+      "operands_uniq": 61,
+      "operators_sum": 102,
+      "operators_uniq": 13
+    },
+    "mean": {
+      "comment_ratio": 34.0084388185654,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.45329009569091333,
+      "halstead_difficulty": 12.467213114754097,
+      "halstead_effort": 16953.792677357684,
+      "halstead_timerequired": 941.8773709643158,
+      "halstead_volume": 1359.87028707274,
+      "loc": 1,
+      "operands_sum": 117,
+      "operands_uniq": 61,
+      "operators_sum": 102,
+      "operators_uniq": 13
+    },
+    "median": {
+      "comment_ratio": 34.0084388185654,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.45329009569091333,
+      "halstead_difficulty": 12.467213114754097,
+      "halstead_effort": 16953.792677357684,
+      "halstead_timerequired": 941.8773709643158,
+      "halstead_volume": 1359.87028707274,
+      "loc": 1,
+      "operands_sum": 117,
+      "operands_uniq": 61,
+      "operators_sum": 102,
+      "operators_uniq": 13
+    },
+    "min": {
+      "comment_ratio": 34.0084388185654,
+      "cyclomatic_complexity": 5,
+      "fanout_external": 2,
+      "fanout_internal": 0,
+      "halstead_bugprop": 0.45329009569091333,
+      "halstead_difficulty": 12.467213114754097,
+      "halstead_effort": 16953.792677357684,
+      "halstead_timerequired": 941.8773709643158,
+      "halstead_volume": 1359.87028707274,
+      "loc": 1,
+      "operands_sum": 117,
+      "operands_uniq": 61,
+      "operators_sum": 102,
+      "operators_uniq": 13
+    }
+  }
+}

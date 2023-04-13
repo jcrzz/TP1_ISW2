@@ -9,7 +9,7 @@ parser.add_argument('--convers', action='store_true', help='Habilita el modo de 
 args = parser.parse_args()
 
 # inicialización de la API de OpenAI
-openai.api_key = "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"
+openai.api_key = "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"
 
 # parámetros de la API
 TOP_P=1          
@@ -61,7 +61,7 @@ while args.convers:
             temperature=TEMPERATURE,
             stop=["You:", "chatGPT:"] # indicar la cadena de STOP para el modo de conversación
         )
-        
+
         # agregar la respuesta al buffer de conversación
         response = completion.choices[0].text.strip()
         conversation_buffer.append("chatGPT: " + response)
