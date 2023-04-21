@@ -1,0 +1,73 @@
+import os
+
+class Director:
+   __builder = None
+
+def setBuilder(self, builder):
+    self.__builder = builder
+
+def getAvion(self):
+    avion = Avion()
+    # Primero el cuerpo
+    body = self.__builder.getBody()
+    avion.setBody(body)
+    # Luego las turbinas
+    turbine1 = self.__builder.getTurbine()
+    turbine2 = self.__builder.getTurbine()
+    avion.setTurbines(turbine1, turbine2)
+    # Luego las alas
+    wing1 = self.__builder.getWing()
+    wing2 = self.__builder.getWing()
+    avion.setWings(wing1, wing2)
+    # Finalmente el tren de aterrizaje
+    landing_gear = self.__builder.getLandingGear()
+    avion.setLandingGear(landing_gear)
+    # Retorna el avión completo
+    return avion
+class Avion:
+   def init(self):
+      self.__turbines = list()
+      self.__wings = list()
+      self.__landing_gear = None
+      self.__body = None
+   def setBody(self, body):
+      self.__body = body
+
+   def setTurbines(self, turbine1, turbine2):
+      self.__turbines.append(turbine1)
+      self.__turbines.append(turbine2)
+
+   def setWings(self, wing1, wing2):
+      self.__wings.append(wing1)
+      self.__wings.append(wing2)
+
+   def setLandingGear(self, landing_gear):
+      self.__landing_gear = landing_gear
+
+   def specification(self):
+      print("Cuerpo: %s" % (self.__body.shape))
+      print("Turbinas: %d" % (len(self.__turbines)))
+      print("Alas: %d" % (len(self.__wings)))
+      print("Tren de aterrizaje: %s" % (self.__landing_gear.type))
+class Builder:
+   def getBody(self): pass
+   def getTurbine(self): pass
+   def getWing(self): pass
+   def getLandingGear(self): pass
+
+class AvionBuilder(Builder):
+   def getBody(self):
+      body = BodyAvion()
+      body.shape = "Avion"
+   return body
+   def getTurbine(self):
+       turbine = Turbine()
+   return turbine
+
+def getWing(self):
+    wing = Wing()
+    return wing
+
+def getLandingGear(self):
+    landing_gear = LandingGear()
+    landing_gear.type =
